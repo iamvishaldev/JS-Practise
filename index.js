@@ -1,119 +1,155 @@
-  
-//   Variable Let
+// /**
+//  * Object Part 01
+//  */
 
-//   let myNumber = 10;
-
-//   console.log(myNumber)
-
-//   let myString;
-
-//   console.log(myString)
-
-//   myString = "Hello from String"
-
-//   console.log(myString)
-
-//   myString = "New value for my string varible"
-
-//   console.log(myString)
-
-  
-// Variable var
+//  let myObject;
 
 
-// var myNumber = 10;
-
-// console.log(myNumber)
-
-// var myString;
-
-// console.log(myString)
-
-// myString = "Hello from String"
-
-// console.log(myString)
-
-// myString = "New value for my string varible"
-
-// console.log(myString)
-
-/**
- * CHALLENGE 1
- *
- */
-
-// const myObject={
-
+// myObject = {
+//     x:10,
+//     b:"abc"
 // }
 
 // console.log(myObject)
 
-// myObject = {};//index.js:51 Uncaught TypeError: Assignment to constant variable.
+// myObject.x = 7;
+
+// console.log(myObject)
+
+// myObject.b = true
+
+// console.log(myObject)
+
+// myObject.c = true
+
+// console.log(myObject)
+
+// myObject.c = "abc"
+
+// console.log(myObject)
+
+// delete myObject.b;
+
+// console.log(myObject)
+
+
+// let myPost = {
+// }
+
+// myPost.postTitle = "Object  is reference type";
+
+// console.log(myPost)
+
+// myPost.postLike = 0;
+
+// myPost.shared = false
+
+// console.log(myPost)
+
+// myPost.postLike = 1
+
+// console.log(myPost);
+
+// delete myPost.shared
+
+// console.log(myPost)
+
+// myPost.postLike = 0
+
+// console.log(myPost)
+
+// myPost.postLike = myPost.postLike + 1;
+
+// console.log(myPost)
+
+// myPost.postLike = myPost.postLike + 2;
+
+// console.log(myPost)
+
+// myPost.shared = true
+
+// console.log(myPost)
+
 
 /**
- * CHALLENGE 2
- *
+ * Example 2
  */
 
-//  var x = 10;
+//  const myObject = {}
 
-//  const y = true;
+//  myObject.a = true
 
-//  const myObject = {
-//     a : x,
-//     b:y,
+//  console.log(myObject);
+
+//  myObject = {
+//      a:true
 //  }
+
+/**
+ * Challenge 2
+ */
+
+// let myObject = {a : 10}
+
+// let copyOfMyObject = myObject
+// console.log(copyOfMyObject)
+// copyOfMyObject.b = false
+
 // console.log(myObject)
-// x=20;
+// console.log(copyOfMyObject)
 
-// let anotherObject;
-
-// anotherObject={
-//     newA:x,
-//     b:y,
-//     c:myObject
+// const myObject = {
+//     a: true,
+//     b:null,
+//     c:25
 // }
 
+// console.log(myObject["a"]);
+
+// //  console.log(myObject[a])
+
+// const propertyName = "c"
+
+// console.log(myObject[propertyName]);
+
+// console.log(myObject["propertyName"]);
+
+  /**
+   * challenge 3
+   */
+
+let objectWithNestedObject = {};
+
+objectWithNestedObject["nestedObject"] = {}
+
+// console.log(objectWithNestedObject)
+
+objectWithNestedObject.nestedObject.a = null
+
+// console.log(objectWithNestedObject)
+
+// objectWithNestedObject.nestedObject["b"] = true
+
+// console.log(objectWithNestedObject);
+
+const newPropertyName = "b"
+
+objectWithNestedObject.nestedObject[newPropertyName] = true
+
+console.log(objectWithNestedObject);
 
 
-//  console.log(anotherObject)
 
 
-let myVariable;
-console.log(myVariable)
-
-myVariable = 10;
-console.log(myVariable)
 
 
-myVariable = true;
-console.log(myVariable);
 
-myVariable = {
-    x: 10,
-    y:10,
-}
 
-console.log(myVariable);
 
-myVariable.y = 20
 
-console.log(myVariable)
 
-// myVariable = null;
 
-myVariable.x = false;
 
-console.log(myVariable);
 
-// console.log(myVariable);
 
-// var myName = null
 
-// console.log(myName)
-
-// myName = 15;
-// console.log(myName)
-
-// myName = false;
-// console.log(myName)
