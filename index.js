@@ -177,11 +177,11 @@
 //  }, 2000);
 let i = 1;
 const myInterval = setInterval(function(){
-    console.log("Here is messsage number "+ i);
+    console.log("Here is messsage numbers to "+ i);
     i = i +1
 },2000)
 
-console.log(myInterval)
+console.log(myInterval )
 
 setTimeout(function(){
     clearInterval(myInterval)
