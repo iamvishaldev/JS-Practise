@@ -1,188 +1,155 @@
+// /**
+//  * Object Part 01
+//  */
+
+//  let myObject;
+
+
+// myObject = {
+//     x:10,
+//     b:"abc"
+// }
+
+// console.log(myObject)
+
+// myObject.x = 7;
+
+// console.log(myObject)
+
+// myObject.b = true
+
+// console.log(myObject)
+
+// myObject.c = true
+
+// console.log(myObject)
+
+// myObject.c = "abc"
+
+// console.log(myObject)
+
+// delete myObject.b;
+
+// console.log(myObject)
+
+
+// let myPost = {
+// }
+
+// myPost.postTitle = "Object  is reference type";
+
+// console.log(myPost)
+
+// myPost.postLike = 0;
+
+// myPost.shared = false
+
+// console.log(myPost)
+
+// myPost.postLike = 1
+
+// console.log(myPost);
+
+// delete myPost.shared
+
+// console.log(myPost)
+
+// myPost.postLike = 0
+
+// console.log(myPost)
+
+// myPost.postLike = myPost.postLike + 1;
+
+// console.log(myPost)
+
+// myPost.postLike = myPost.postLike + 2;
+
+// console.log(myPost)
+
+// myPost.shared = true
+
+// console.log(myPost)
+
+
 /**
- * Ex1
+ * Example 2
  */
 
-// function myFun(){}
-// console.log(myFun());
+//  const myObject = {}
 
-/**
- * Ex2
- */
+//  myObject.a = true
 
-//  function myFun(a,b){
-//     console.log(a);
-//     console.log(b);
-    
+//  console.log(myObject);
+
+//  myObject = {
+//      a:true
 //  }
 
-//  myFun(10,2);
-
-//  myFun(true,null);
-
-//  myFun(true,false);
-
-//  myFun();
-
-//  myFun(10)
-
-//  myFun("abc");
-
-// console.log(myFun(4,1));
-
 /**
- * Ex3
+ * Challenge 2
  */
 
+// let myObject = {a : 10}
 
-// function myFun(a,b){
-//     console.log(a,b);
+// let copyOfMyObject = myObject
+// console.log(copyOfMyObject)
+// copyOfMyObject.b = false
+
+// console.log(myObject)
+// console.log(copyOfMyObject)
+
+// const myObject = {
+//     a: true,
+//     b:null,
+//     c:25
 // }
 
-// console.log(myFun(3,2));
+// console.log(myObject["a"]);
 
-// console.log(a);
+// //  console.log(myObject[a])
 
+// const propertyName = "c"
 
-// function myFun(a,b){
-//     console.log(a,b);
-    
-// }
+// console.log(myObject[propertyName]);
 
-// console.log(myFun(3,2));
+// console.log(myObject["propertyName"]);
 
-// console.log(a);
-// console.log(b);
+  /**
+   * challenge 3
+   */
 
-////Ex4
+let objectWithNestedObject = {};
 
-// function myFun1(a,b){
-//     console.log(a,b);
-// }
+objectWithNestedObject["nestedObject"] = {}
 
-// function myFun2(a,b){
-//     console.log(a,b);
-// }
+// console.log(objectWithNestedObject)
 
-// const a = true;
-// const b = null;
+objectWithNestedObject.nestedObject.a = null
 
-// myFun1(2,3)
-// myFun2(5,7)
+// console.log(objectWithNestedObject)
 
-// console.log(a,b);
+// objectWithNestedObject.nestedObject["b"] = true
 
-////Ex5
+// console.log(objectWithNestedObject);
 
-// function mySum(a,b){
-//     return a+b;
-// }
+const newPropertyName = "b"
 
-// mySum(2,2)
+objectWithNestedObject.nestedObject[newPropertyName] = true
 
-// console.log(mySum(2,2));
-
-// console.log(mySum("abc",2));
-
-// console.log(mySum());
-
-////Ex6
-
-// function myFun(a){
-//     console.log(a);
-//     //return a;
-//     // console.log(a);
-//     // const c = 10
-// }
-
-// myFun(10)
-
-
-/// Chalenge 1
-
-
-//  function mult(a,b,c){
-//      let d = a*b*c;
-//      console.log(d)
-//  }
-
-//  mult(1,2,3)
-
-//  mult(0,2,5)
-
-//  mult()
-
-//  console.log(mult(2,3,5)); 
-
-
-// /// Chalenge 2
-
-// function concatenateString(a,b){
-   
-//     return a+b
-// }
-
-// const c = concatenateString("Vishal ","Yadav");
-
-// console.log(c)
+console.log(objectWithNestedObject);
 
 
 
-///challenge 3
-
-// function outerFunction(a,b){
-//     function innerFunction(p){
-//         return p * p;
-//     }
-//     const sum = a + b;
-//     const result = innerFunction(sum)
-//     console.log(result)
-// }
-
-// outerFunction(2,2)
-
-/**
- * Function Expression
- */
-
-// // function(){}
-
-//   const myFun = function(){};
-//  console.log(myFun()); 
-
-// console.log(myFun)
-   
-
-/**
- * Callback function
- */
-
-//  setTimeout(function(){
-//      console.log("Delayed message");
-//  },3000);
-// let i = 1
-// setInterval(function(){
-//     console.log("Message log in one secod" + i);
-//     i = i + 1
-// },1000);
 
 
-// Challenge
 
-// let i = 1;
-//  setInterval(function(){
-     
-//     console.log("Here is message number "+1);
-    
 
-//  }, 2000);
-let i = 1;
-const myInterval = setInterval(function(){
-    console.log("Here is messsage numbers to "+ i);
-    i = i +1
-},2000)
 
-console.log(myInterval )
 
-setTimeout(function(){
-    clearInterval(myInterval)
-}, 10000);
+
+
+
+
+
+
+
